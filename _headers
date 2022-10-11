@@ -1,0 +1,4 @@
+/.well-known/openid-configuration
+  Content-Type: application/json
+/.well-known/jwks
+  Content-Type: application/json
