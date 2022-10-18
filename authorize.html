@@ -33,6 +33,7 @@
         name: 'Fake User',
         email: 'fake-user@example.com',
         picture: 'https://i.pravatar.cc/256?u=fake-user',
+        nonce: inputParams.nonce,
       }
       const oauthClaims = signal(JSON.stringify(initialClaims, null, 2))
       const jwt = signal('')
