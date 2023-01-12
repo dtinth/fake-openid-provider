@@ -1,6 +1,10 @@
 # fake-openid-provider
 Fake OpenID Provider
 
+## Authorize URL (example)
+
+<https://fake-openid-provider.netlify.app/authorize?redirect_uri=https://httpbin.org/anything&state=nothing>
+
 ## Private key
 Use this private key to mint your ID tokens:
 
