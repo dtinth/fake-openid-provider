@@ -2,7 +2,7 @@
 Fake OpenID Provider
 
 ## Private key
-Use this private key to mint your ID tokens!
+Use this private key to mint your ID tokens:
 
 ```json
 {
@@ -15,5 +15,22 @@ Use this private key to mint your ID tokens!
   "p": "_yQB3ai6VffNQ26-idiKhQ352zXnqV0KBHj3cXcyOow4OaPEK9eDX35K_D-MkvVsLZj9fesV56xxJ6EacvhtZ1-Jcl3ExJ1KfysjfS2gCi-wXV9gNq_1thOC0lcXrkaXWZuG5uCwjnqvWgdO-OWbSHzN9iLW1ySeV7Ak3OD4YHM",
   "q": "xN2RHvx434wC6PPQd4TzipvWruFjcQBJ7-lTS-ou0TOI107bHptr2vLTCVzevG9O2SkFe7BfLrUerzCNtzk-w866r290SVlhJq0EVrhkN9pKQ1ylfGKEe75u10e-yy1e6-i-4oLMjhtDsUBBCbCKCwx2zZyp0MZQVmote_HlUQU",
   "qi": "JZo3Ym9ZOiAIb0BQgdLhtGl7d2nyVyAMS0Hd0Le9cXO26L1nxgBD8vIpBmS9kncub1UME61HS7BucITFt19UyoTL9zeJjlVOq3ghRsGd1hHiUXhwfg2i5FcaUQbLpbH5IqA8a4KSFNtxjgXZohcdvyn4_Z2ctOuzs_WtG5uuKBc"
+}
+```
+
+Set the following header:
+
+```json
+{
+  "alg": "RS256",
+  "kid": "nevergonnagiveyouup"
+}
+```
+
+Set the following claims:
+
+```json
+{
+  "iss": "https://fake-openid-provider.netlify.app"
 }
 ```
